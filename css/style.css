@@ -1,0 +1,292 @@
+/* * - all */
+
+* {
+  /* добавить всем тегам наш шрифт */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* 100 % от высоты экрана */
+  min-height: 100vh;
+}
+
+main {
+  /* заставляет main расширятся на весь экран */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.title {
+  /* padding: 20px;
+  margin: 100px; */
+  /* color: red; */
+  /* border: 1px solid black; */
+}
+
+.header {
+  height: 70px;
+  padding: 0 20px;
+  background-color: #222222;
+  display: flex;
+  /* управляет элементами по горизонтали */
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.header-logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-button {
+  background-color: white;
+  border: 0;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 16px;
+}
+
+.profile-button {
+  background-color: #222222;
+  color: #fff;
+  border: 0;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 16px;
+  transition: all 0.4s;
+}
+
+.profile-button:hover {
+  background-color: #3d3d3d;
+  transition: all 0.4s;
+}
+
+.profile {
+  padding: 20px 0;
+  display: flex;
+  /* делает флекс по вертикали */
+  flex-direction: column;
+  align-items: center;
+  /* gap - расстояние между элементами */
+  gap: 16px;
+}
+
+.profile-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 48px;
+
+  /* расстояние между буквами */
+  letter-spacing: 1.5px;
+}
+
+.profile-bio {
+  width: 480px;
+
+  /* прозрачность */
+  opacity: 0.7;
+  text-align: center;
+}
+
+.footer {
+  background-color: #222222;
+  color: #ffffffb6;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.posts > h1 {
+  margin-bottom: 20px;
+}
+
+.post {
+  width: 800px;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-bottom: 16px;
+  padding: 20px;
+  border-radius: 15px;
+  filter: drop-shadow(2px 2px 2px #0000006a);
+  transition: all 0.4s;
+}
+
+.post:hover {
+  filter: drop-shadow(5px 5px 5px #0000006a);
+  transform: scale(1.01);
+  transition: all 0.4s;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.login {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid #ccc;
+  filter: drop-shadow(2px 2px 2px #0000006a);
+  background-color: #fff;
+  padding: 60px 8px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.login-back {
+  color: black;
+  /* дает декорацию тексту */
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.login-back:hover {
+  background-color: #00000017;
+  transition: 0.4s;
+}
+
+.login-title {
+  text-align: center;
+}
+
+.login-subtitle {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+.login-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form > label {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.login-button {
+  width: fit-content;
+  margin-top: 8px;
+  background-color: #222222;
+  color: #fff;
+  border: 0;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 16px;
+  transition: all 0.4s;
+}
+
+.login-button:hover {
+  background-color: #3d3d3d;
+  transition: all 0.4s;
+}
+
+.login-form > input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+  justify-content: end;
+}
+
+.register {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid #ccc;
+  filter: drop-shadow(2px 2px 2px #0000006a);
+  background-color: #fff;
+  padding: 60px 8px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.register-back {
+  color: black;
+  /* дает декорацию тексту */
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.register-back:hover {
+  background-color: #00000017;
+  transition: 0.4s;
+}
+
+.register-title {
+  text-align: center;
+}
+
+.register-subtitle {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+.register-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-form > label {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.register-button {
+  width: fit-content;
+  margin-top: 8px;
+  background-color: #222222;
+  color: #fff;
+  border: 0;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 16px;
+  transition: all 0.4s;
+}
+
+.register-button:hover {
+  background-color: #3d3d3d;
+  transition: all 0.4s;
+}
+
+.register-form > input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid black;
+}

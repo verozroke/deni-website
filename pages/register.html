@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Register</title>
+    <!-- импортировал шрифты -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- импортировать цсс внутри хтмл -->
+    <!-- .. - назад -->
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html"><span class="header-logo">bloggers.io</span></a>
+      <div class="header-buttons">
+        <a href="login.html">
+          <button class="header-button">Login</button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="register">
+        <h1 class="register-title">Welcome!</h1>
+        <p class="register-subtitle">Lorem ipsum dolor sit amet.</p>
+        <form
+          class="register-form"
+          action=""
+        >
+          <label for="">Login</label>
+          <input
+            id="register-login"
+            class="register-input"
+            type="text"
+          />
+          <label for="">Password</label>
+          <input
+            id="register-password"
+            class="register-input"
+            type="password"
+          />
+          <p
+            class="password-error hidden"
+            style="color: red"
+          >
+            At least 8 characters
+          </p>
+          <label for="">Configm Password</label>
+          <input
+            id="register-confirm-password"
+            class="register-input"
+            type="password"
+          />
+          <p
+            class="confirm-password-error hidden"
+            style="color: red"
+          >
+            At least 8 characters
+          </p>
+          <div class="row">
+            <button
+              class="register-button"
+              type="submit"
+            >
+              Register
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      bloggers.io. Все права защищены <br />
+      Разработчик: Deni
+    </footer>
+    <script src="register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Login</title>
+    <!-- импортировал шрифты -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- импортировать цсс внутри хтмл -->
+    <!-- .. - назад -->
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html"><span class="header-logo">bloggers.io</span></a>
+      <div class="header-buttons">
+        <a href="register.html">
+          <button class="header-button">Register</button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="login">
+        <h1 class="login-title">Welcome back!</h1>
+        <p class="login-subtitle">Lorem ipsum dolor sit amet.</p>
+        <form
+          class="login-form"
+          action=""
+        >
+          <label for="">Login</label>
+          <input
+            id="login-login"
+            class="login-input"
+            type="text"
+          />
+          <label for="">Password</label>
+          <input
+            id="login-password"
+            class="login-input"
+            type="password"
+          />
+          <p
+            class="confirm-password-error hidden"
+            style="color: red"
+          >
+            At least 8 characters
+          </p>
+          <div class="row">
+            <button
+              class="login-button"
+              type="submit"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      bloggers.io. Все права защищены <br />
+      Разработчик: Deni
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>
